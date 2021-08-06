@@ -31,9 +31,16 @@ function getMarkets(coin){
         .then(res => res.data)
 }
 
+function getExchange(id){
+    return fetch(`${url}/exchanges/${id}`)
+        .then(res => res.json())
+        .then(res => res.data) 
+}
+
 export default {
   getAssets,
   getAsset,
   getAssetHistory,
-  getMarkets
+  getMarkets,
+  getExchange
 }
