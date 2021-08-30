@@ -1,4 +1,9 @@
-
+<template> 
+  <main>
+    <px-header :links="links"></px-header>
+    <router-view class="containter px-5 sm:px-20 py-20 flex justify-center"/>
+  </main>
+</template>
 
 <script>
 
